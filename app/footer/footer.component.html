@@ -1,0 +1,22 @@
+<footer>
+  <br>
+  <h1 style="text-align:center;color: white;">Join Us</h1>
+  <div class="d-flex p-2 bd-highlight">
+
+
+        <div class="form">
+          <div class="form-group">
+            <label >Name</label>
+            <input  class="form-control" id="exampleInputPassword1" placeholder="Name" [(ngModel)]="t.name">
+          </div>
+          <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" [(ngModel)]="t.pr">
+        
+      </div>
+      
+      
+      <button class="btn btn-primary" style="margin-left:25px;" *ngIf="mode" (click)="t.name && t.pr && add()">Submit</button>
+    </div>
+  </div>
+</footer>

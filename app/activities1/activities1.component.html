@@ -1,0 +1,30 @@
+<br>
+
+<h1 style="padding-left:80px;"><i>Gallery</i></h1>
+<hr>
+
+
+
+<div class="d-flex p-2 bd-highlight">
+<div class="row row-cards" id="c" >
+  <div class="col-md-6 col-lg-4" id="a" *ngFor="let act1 of acts1 | async">
+   <div class="card h-100" id="c1">
+     <div class="card-body" id="cb">
+       <div class="mb-4 text-center">
+         <img src="{{act1.photo}}" id="pic"  alt="picture" class="img-fluid">
+       </div>
+      <h2><strong>{{act1.name}}</strong></h2>
+    
+       </div>
+     </div>
+   </div>
+
+   
+     
+   </div>
+
+   
+</div>
+<br>
+<br>
+

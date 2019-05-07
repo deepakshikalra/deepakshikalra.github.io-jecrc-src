@@ -1,0 +1,22 @@
+<br >
+<br>
+  <h1 style="text-align:center;">Welcome to Admin Page</h1>
+  <br>
+  <div class="d-flex p-2 bd-highlight">
+        <div class="form">
+         
+          <div class="form-group">
+        <label for="exampleInputEmail1">Username</label>
+        <input  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter username" [(ngModel)]="t.username"> 
+      </div>
+      
+      <div class="form-group">
+        <label >Password</label>
+        <input  class="form-control" id="exampleInputPassword1" placeholder="password" [(ngModel)]="t.password">
+      </div>
+      
+        <a  class="btn btn-primary" style="margin-left:25px;"  *ngIf="t.username=='j' && t.password=='k'"  href="/Ajfkutdtydgjchvhfkfyu" >Login</a>
+  
+      
+    </div>
+  </div>

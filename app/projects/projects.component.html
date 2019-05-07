@@ -1,0 +1,113 @@
+<br>
+<br>
+
+<h1><i>Our Projects</i></h1>
+<br>
+<br>
+<div class="container">
+
+
+<h2 class="head">Snake and Ladder</h2>
+<hr>
+<div class="d-flex1 p-2 justify-content-lg-end " >
+        <div class="row" >
+        <div class="col-md-4">
+            <br>
+            <img src="assets/New folder/snake.jpg" alt="twister">  
+       </div>
+        <div class="col-md-8">
+            <br>
+        <p style="text-align:justify;">Spiritual Library is an inspiring  library with thousands of spiritual articles, books and lots more.Spirit Library is the virtual library for empowerment and inspiration full of articles, channelings, books, videos, and other spiritual information. A library of book excerpts focused on personal and spiritual growth, psychology, and the world's religions.</p>    
+       </div>
+        </div>
+    </div>
+<br>
+<br>
+<h2 class="head">World Clock</h2>
+<hr>
+<div class="d-flex1 p-2 justify-content-lg-end">
+        <div class="row">
+        <div class="col-md-8">
+            <br>
+                <p style="text-align:justify;">A unique lab exploring the psychological aspects of religion and spirituality.Leaders in spiritual research, bridging the known & unknown (spiritual) world. Dedicated to the spiritual progress of every person and society as a whole.The spiritual research method is far superior to the modern scientific method in ... It is not conducted outside the self i.e. in a laboratory or field trials in society.
+                    </p>
+       </div>
+        <div class="col-md-4">
+            <br>
+            <img src="assets/New folder/clock.jpg" alt="twister">
+        
+        
+        
+       </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h2 class="head" id='lib'>Twister</h2>
+    <hr>
+    <div class="d-flex1 p-2 justify-content-lg-end">
+            <div class="row">
+            <div class="col-md-4">
+            <img src="assets/New folder/twister.jpg" alt="twister">
+           </div>
+            <div class="col-md-8">
+                <br>
+            
+            <p style="text-align:justify;">A unique lab exploring the psychological aspects of religion and spirituality.Leaders in spiritual research, bridging the known & unknown (spiritual) world. Dedicated to the spiritual progress of every person and society as a whole.The spiritual research method is far superior to the modern scientific method in ... It is not conducted outside the self i.e. in a laboratory or field trials in society.
+              </p>
+            
+           </div>
+            </div>
+        </div>
+    
+
+
+
+
+<div  *ngFor="let project of projects | async" >
+    <div *ngIf="project % 2 === 0">
+    <br>
+    <br>
+    <h2 class="head" id='lib'>{{project.name}}</h2>
+    <hr>
+    <div class="d-flex1 p-2 justify-content-lg-end">
+            <div class="row">
+            <div class="col-md-4">
+            <img src="{{project.photo}}" alt="twister">
+           </div>
+            <div class="col-md-8">
+                <br>
+            
+            <p style="text-align:justify;">{{project.description}}  </p>
+            
+           </div>
+            </div>
+        </div>
+        </div>
+    
+
+
+    <div *ngIf="project % 2 !== 0">
+            <br>
+            <br>
+            <h2 class="head">{{project.name}}</h2>
+            <hr>
+            <div class="d-flex1 p-2 justify-content-lg-end">
+                    <div class="row">
+                    <div class="col-md-8">
+                        <br>
+                            <p style="text-align:justify;">{{project.description}}</p>
+                                
+                   </div>
+                    <div class="col-md-4">
+                        <br>
+                        <img src="{{project.photo}}" alt="twister">
+                    
+                    
+                    
+                   </div>
+                    </div>
+                </div>
+    </div>
+</div>
+</div>

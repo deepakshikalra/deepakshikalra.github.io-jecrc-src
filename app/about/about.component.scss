@@ -1,0 +1,41 @@
+ img{
+   border-radius: 50%;
+   width: 250px;
+   height: 220px;
+ }
+ h2{
+   text-align: center;
+ }
+
+.btn
+{
+  margin:10px;
+  width: 120px;
+  
+}
+.card
+{
+  border: none;
+}
+.card:hover
+{
+  background-color: rgb(38, 143, 73);
+}
+p{
+  text-align: justify;
+}
+a.custom-card,
+a.custom-card:hover {
+  color: inherit;
+  text-decoration:none;
+}
+
+.head
+{
+  text-align: left;
+}
+
+.d-flex1 img
+{
+  border-radius: 5%;
+}

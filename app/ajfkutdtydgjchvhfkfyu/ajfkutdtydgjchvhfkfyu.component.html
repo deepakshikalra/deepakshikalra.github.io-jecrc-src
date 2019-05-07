@@ -1,0 +1,137 @@
+<br>
+
+
+<h1 style="text-align:center;">Welcome to admin page</h1>
+
+<h2 style="padding-left:30px;">Add activities</h2>
+<hr>
+<br>
+   
+<div class="d-flex p-2 bd-highlight">
+
+
+      <div class="form">
+        <div class="form-group">
+          <label >Name</label>
+          <input  class="form-control" id="exampleInputPassword1" placeholder="Name" [(ngModel)]="t.name">
+        </div>
+       
+    <div class="form-group">
+        <label >Enter Photo Url</label>
+        <input  class="form-control" id="exampleInputPassword1" placeholder="Url" [(ngModel)]="t.photo">
+      </div>
+
+
+    
+    <button class="btn btn-primary" style="margin-left:25px;" *ngIf="mode" (click)="t.name && t.photo && add()">Submit</button>
+  </div>
+</div>
+
+
+
+<h2 style="padding-left:30px;">Add Projects</h2>
+<hr>
+<br>
+<br>
+   
+<div class="d-flex p-2 bd-highlight">
+
+
+      <div class="form">
+        <div class="form-group">
+          <label >Name</label>
+          <input  class="form-control" id="exampleInputPassword1" placeholder="Name" [(ngModel)]="t1.name">
+        </div>
+        <div class="form-group">
+      <label for="exampleInputEmail1">description</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter description" [(ngModel)]="t1.description"> 
+    </div>
+    <div class="form-group">
+        <label >Enter Photo Url</label>
+        <input  class="form-control" id="exampleInputPassword1" placeholder="Url" [(ngModel)]="t1.photo">
+      </div>
+    
+    <button class="btn btn-primary" style="margin-left:25px;" *ngIf="mode" (click)="t1.name && t1.description && t1.photo && add1()">Submit</button>
+  </div>
+</div>
+
+<h2 style="padding-left:30px;">Add Events</h2>
+<hr>
+<br>
+ <br>  
+<div class="d-flex p-2 bd-highlight">
+
+
+      <div class="form">
+        <div class="form-group">
+          <label >Name</label>
+          <input  class="form-control" id="exampleInputPassword1" placeholder="Name" [(ngModel)]="t2.name">
+        </div>
+        <div class="form-group">
+      <label for="exampleInputEmail1">description</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter description" [(ngModel)]="t2.description"> 
+    </div>
+    <div class="form-group">
+        <label >Enter Photo Url</label>
+        <input  class="form-control" id="exampleInputPassword1" placeholder="Url" [(ngModel)]="t2.photo">
+      </div>
+    <div class="form-group">
+        <label >Date and time</label>
+        <input  class="form-control" id="exampleInputPassword1" placeholder="Url" [(ngModel)]="t2.time">
+      </div>
+    <button class="btn btn-primary" style="margin-left:25px;" *ngIf="mode" (click)="t2.name && t2.description && t2.photo && t2.time && add2()">Submit</button>
+  </div>
+</div>
+
+<h2 style="padding-left:30px;">Add Lecture</h2>
+<hr>
+<br>
+  <br> 
+<div class="d-flex p-2 bd-highlight">
+
+
+      <div class="form">
+        <div class="form-group">
+          <label >Name</label>
+          <input  class="form-control" id="exampleInputPassword1" placeholder="Name" [(ngModel)]="t3.name">
+        </div>
+        <div class="form-group">
+      <label for="exampleInputEmail1">description</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter description" [(ngModel)]="t3.description"> 
+    </div>
+    <div class="form-group">
+        <label >Enter Video Url</label>
+        <input  class="form-control" id="exampleInputPassword1" placeholder="Url" [(ngModel)]="t3.video">
+      </div>
+    
+    <button class="btn btn-primary" style="margin-left:25px;" *ngIf="mode" (click)="t3.name && t3.description && t3.video && add3()">Submit</button>
+  </div>
+</div>
+
+
+
+<h2 style="padding-left:30px;">Add Books</h2>
+<hr>
+<br>
+  <br> 
+<div class="d-flex p-2 bd-highlight">
+
+
+      <div class="form">
+        <div class="form-group">
+          <label >Photo url</label>
+          <input  class="form-control" id="exampleInputPassword1" placeholder="Url" [(ngModel)]="t4.photo">
+        </div>
+        <div class="form-group">
+      <label for="exampleInputEmail1">description</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter description" [(ngModel)]="t4.description"> 
+    </div>
+    <div class="form-group">
+        <label >Enter pdf Url</label>
+        <input  class="form-control" id="exampleInputPassword1" placeholder="Url" [(ngModel)]="t4.pdf">
+      </div>
+    
+    <button class="btn btn-primary" style="margin-left:25px;" *ngIf="mode" (click)="t4.photo && t4.description && t4.pdf && add4()">Submit</button>
+  </div>
+</div>
+

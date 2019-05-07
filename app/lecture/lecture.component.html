@@ -1,0 +1,30 @@
+<br>
+
+<h1 style="padding-left:80px;"><i>Online Lectures</i></h1>
+<hr>
+<div class="d-flex p-2 bd-highlight">
+<div class="row row-cards" id="c" >
+  <div class="col-md-6 col-lg-4" id="a" *ngFor="let lecture of lectures | async">
+   <div class="card h-100" id="c1">
+     <div class="card-body" id="cb">
+       <div class="mb-4 text-center">
+          <video width="400" controls>
+              <source src="{{lecture.video}}" type="video/mp4">
+              <source src="mov_bbb.ogg" type="video/ogg">
+              
+            </video>
+            
+       </div>
+      <h2 style="text-align:left"><strong>{{lecture.name}}</strong></h2>
+      <p style="text-align: justify">{{lecture.description}}</p>
+     
+       </div>
+     </div>
+    </div>  
+   </div>
+
+   
+</div>
+<br>
+<br>
+
